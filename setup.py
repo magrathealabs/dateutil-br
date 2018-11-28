@@ -6,7 +6,7 @@ requires = [
 
 setup(
     name='brdateutil',
-    version='3.2.0',
+    version='3.3.0',
     description='IMplementation to Pt-br of python lib python-dateutil',
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
