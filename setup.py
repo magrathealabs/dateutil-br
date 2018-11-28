@@ -1,18 +1,18 @@
 from setuptools import setup
 
 requires = [
-    'dateutil==*',
+    'python-dateutil==2.7.5',
 ]
 
 setup(
     name='brdateutil',
-    version='1.0.0',
+    version='3.2.0',
     description='IMplementation to Pt-br of python lib python-dateutil',
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
     author_email='contact@magrathealabs.com',
     license='MIT',
-    packages=['brdateutilb'],
+    packages=['brdateutil'],
     zip_safe=False,
     keywords = ['date parser python', 'date parser', 'dateutil', 'data em português'],
     install_requires=requires,
@@ -22,7 +22,6 @@ setup(
         'Intended Audience :: Information Technology',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2 :: 3',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
     ]
