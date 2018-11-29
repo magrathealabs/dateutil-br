@@ -12,18 +12,16 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = "\n" + f.read()
 
-with open('LICENSE') as f:
-    license = f.read()
-
 setup(
     name='dateutil-br',
-    version='0.0.4',
+    version='0.0.6',
     description='Implementation to Pt-br of python lib python-dateutil',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
     author_email='contact@magrathealabs.com',
-    license=license,
+    license="MIT",
     packages=['.'],
     zip_safe=False,
     keywords=['date parser python', 'date parser',
