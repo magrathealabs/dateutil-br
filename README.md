@@ -15,10 +15,9 @@ pip install dateutil-br
 ## Usage Exemples
 
 ```python
->>> from dateutil_br import BrParserInfo
->>> from dateutil.parser import parserinfo, parser
+>>> from dateutil_br import BrParserInfo, parser
 
->>> print(parser(BrParserInfo()).parse('8/04/2018'))
+>>> print(parser(BrParserInfo()).parse('08/04/2018'))
 "2018-04-08 00:00:00"
 
 >>> print(parser(BrParserInfo()).parse('10 de abril de 2018'))

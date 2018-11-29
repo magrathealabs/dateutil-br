@@ -30,7 +30,7 @@ with open('LICENSE') as f:
 
 setup(
     name='dateutil-br',
-    version='0.0.2',
+    version='0.0.4',
     description='Implementation to Pt-br of python lib python-dateutil',
     long_description=README,
     url='http://github.com/magrathealabs/dateutil-br',
