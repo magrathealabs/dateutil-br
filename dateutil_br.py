@@ -1,31 +1,32 @@
 from dateutil.parser import parserinfo, parser
 
+
 class BrParserInfo(parserinfo):
     JUMP = [" ", ".", ",", ";", "-", "/", "'",
-            "as", "a", "e", "de", "do", "em"]
+            "as", "a", "e", "de", "do", "da", "em"]
 
     WEEKDAYS = [("Seg", "Segunda"),
                 ("Ter", "Terça"),
                 ("Qua", "Quarta"),
                 ("Qui", "Quinta"),
-                ("Sex", "cta"),
-                ("Sab", "Sabado"),
+                ("Sex", "Sexta"),
+                ("Sab", "Sábado"),
                 ("Dom", "Domingo")]
 
     MONTHS = [("Jan", "Janeiro"),
-              ("Feb", "Fevereiro"),
+              ("Fev", "Fevereiro"),
               ("Mar", "Março"),
-              ("Apr", "Abril"),
-              ("May", "Maio"),
+              ("Abr", "Abril"),
+              ("Mai", "Maio"),
               ("Jun", "Junho"),
               ("Jul", "Julho"),
               ("Aug", "Agosto"),
-              ("Sep", "Setembro"),
-              ("Oct", "Outubro"),
+              ("Set", "Setembro"),
+              ("Out", "Outubro"),
               ("Nov", "Novembro"),
-              ("Dec", "Dezembro")]
+              ("Dez", "Dezembro")]
 
-    HMS = [("h", "hora", "horas"),
+    HMS = [("h", "hora", "horas", "hs"),
            ("m", "minuto", "minutos", "min"),
            ("s", "segundo", "segundos")]
 

@@ -14,7 +14,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name='dateutil-br',
-    version='0.0.6',
+    version='0.0.7',
     description='Implementation to Pt-br of python lib python-dateutil',
     long_description=long_description,
     long_description_content_type='text/markdown',
