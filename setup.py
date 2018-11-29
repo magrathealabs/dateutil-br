@@ -1,29 +1,16 @@
-from setuptools import setup
-from os.path import isfile
+import codecs
 import os
-import io
+
+from setuptools import setup
 
 requires = [
     'python-dateutil>=2.7.5',
 ]
 
+here = os.path.abspath(os.path.dirname(__file__))
 
-def README():
-    with io.open('README.rst', encoding='utf-8') as f:
-        readme_lines = f.readlines()
-
-    # The .. doctest directive is not supported by PyPA
-    lines_out = []
-    for line in readme_lines:
-        if line.startswith('.. doctest'):
-            lines_out.append('.. code-block:: python3\n')
-        else:
-            lines_out.append(line)
-
-    return ''.join(lines_out)
-
-
-README = README()  # NOQA
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
+    long_description = "\n" + f.read()
 
 with open('LICENSE') as f:
     license = f.read()
@@ -32,7 +19,7 @@ setup(
     name='dateutil-br',
     version='0.0.4',
     description='Implementation to Pt-br of python lib python-dateutil',
-    long_description=README,
+    long_description=long_description,
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
     author_email='contact@magrathealabs.com',
@@ -48,6 +35,8 @@ setup(
         'Intended Audience :: Information Technology',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
     ]
