@@ -10,9 +10,7 @@ You can see the repository `pypi` on: https://pypi.org/project/dateutil-br/
 Install
 =======
 
-```sh
-pip install dateutil-br
-```
+`pip install dateutil-br`
 
 Usage Exemples
 ==============
