@@ -19,13 +19,13 @@ pip install dateutil-br
 >>> from dateutil.parser import parserinfo, parser
 
 >>> print(parser(BrParserInfo()).parse('8/04/2018'))
-2018-04-08 00:00:00
+"2018-04-08 00:00:00"
 
 >>> print(parser(BrParserInfo()).parse('10 de abril de 2018'))
-2018-04-10 00:00:00
+"2018-04-10 00:00:00"
 
 >>> print(parser(BrParserInfo()).parse('15 horas e 13 min de 10 de abril de 2018'))
-2018-04-10 15:13:00
+"2018-04-10 15:13:00"
 ```
 
 ## Maintainer
