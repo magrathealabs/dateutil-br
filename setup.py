@@ -1,17 +1,24 @@
 from setuptools import setup
 
 requires = [
-    'python-dateutil==2.7.5',
+    'python-dateutil>=2.7.5',
 ]
+
+with open('README.md') as f:
+    readme = f.read()
+
+with open('LICENSE') as f:
+    license = f.read()
 
 setup(
     name='dateutil-br',
-    version='0.0.1',
-    description='IMplementation to Pt-br of python lib python-dateutil',
+    version='0.0.2',
+    description='Implementation to Pt-br of python lib python-dateutil',
+    long_description=readme,
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
     author_email='contact@magrathealabs.com',
-    license='MIT',
+    license=license,
     packages=['.'],
     zip_safe=False,
     keywords=['date parser python', 'date parser',

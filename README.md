@@ -2,9 +2,9 @@
 
 Implementation to python-dateutil with to Pt-br language. "(>_&lt;)"
 
-This implementation rewrites the constants used in the dateutil library's date parse.
+This implementation rewrites the constants used in the [dateutil](https://github.com/dateutil/dateutil) library's date parse.
 
-You can see the repository `pypi` on: `https://pypi.org/project/dateutil-br/`
+You can see the repository `pypi` on: https://pypi.org/project/dateutil-br/
 
 ## Install
 
@@ -31,7 +31,7 @@ print(parser(BrParserInfo()).parse('15 horas e 13 min de 10 de abril de 2018'))
 
 ## Maintainer
 
-This code is sustained by Magrathea Labs, in the repository `https://github.com/magrathealabs/dateutil-br`
+This code is sustained by Magrathea Labs, in the repository https://github.com/magrathealabs/dateutil-br
 
 ## License
 
