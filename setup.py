@@ -5,18 +5,19 @@ requires = [
 ]
 
 setup(
-    name='brdateutil',
-    version='3.3.0',
+    name='dateutil-br',
+    version='0.0.1',
     description='IMplementation to Pt-br of python lib python-dateutil',
     url='http://github.com/magrathealabs/dateutil-br',
     author='Magrathea Labs',
     author_email='contact@magrathealabs.com',
     license='MIT',
-    packages=['brdateutil'],
+    packages=['.'],
     zip_safe=False,
-    keywords = ['date parser python', 'date parser', 'dateutil', 'data em português'],
+    keywords=['date parser python', 'date parser',
+              'dateutil', 'dateutil-br', 'data em português'],
     install_requires=requires,
-    classifiers = [
+    classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
